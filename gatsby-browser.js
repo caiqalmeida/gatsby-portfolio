@@ -1,2 +1,2 @@
 import "lazysizes"
-require("prismjs/themes/prism-funky.css")
+require("prismjs/themes/prism-tomorrow.css")

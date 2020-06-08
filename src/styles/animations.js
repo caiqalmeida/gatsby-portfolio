@@ -1,5 +1,4 @@
 import { keyframes } from 'styled-components';
-import colors from '../constants/colors';
 
 const bounce = keyframes`
   0%,

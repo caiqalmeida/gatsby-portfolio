@@ -5,7 +5,6 @@ import media from 'styled-media-query';
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import PageContentWrapper from '../components/PageContentWrapper';
-import Emoji from '../components/Emoji';
 import { gradientMoveDiagonal } from '../styles/animations';
 
 import colors from '../constants/colors';

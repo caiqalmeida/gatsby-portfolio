@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: caiqalmeida/gatsby-portfolio
+  branch: master
+  site_domain: caiqalmeida.netlify.app
+
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Category", name: "category", widget: "select", options: ["css", "javascript", "html", "css", "dev", "react"] }
+      - { label: "Background", name: "background", widget: "select"  , options: [
+        {label: "css", value: "#254BDE"},
+        {label: "javascript", value: "#F0D91B"},
+        {label: "html", value: "#DD4A25"},
+        {label: "dev", value: "#47E5BC"},
+        {label: "react", value: "#4AD5FF"},
+      ] }
+      - {label: "Body", name: "body", widget: "markdown"}

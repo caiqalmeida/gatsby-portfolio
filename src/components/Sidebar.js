@@ -4,7 +4,6 @@ import media from 'styled-media-query';
 import { Link } from 'gatsby';
 
 import SocialIcons from './SocialIcons';
-import colors from '../constants/colors'
 
 const SidebarContainer = styled.div`
   right: ${(props) => (props.sidebarActive ? '0' : '-500px')};
